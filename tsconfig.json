@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 最新のJavaScript仕様にコンパイル
+    "module": "esnext", // ESモジュール形式を使用
+    "moduleResolution": "node", // Node.jsのモジュール解決を使用
+    "strict": true, // 厳密な型チェック
+    "esModuleInterop": true, // ESモジュールとCommonJSモジュールの互換性
+    "skipLibCheck": true, // ライブラリファイルの型チェックをスキップ
+    "forceConsistentCasingInFileNames": true, // ファイル名のケースを一致させる
+    "resolveJsonModule": true, // JSONファイルのインポートをサポート
+    "outDir": "./dist", // 出力ディレクトリ
+    "rootDir": "./src" // ソースコードのルートディレクトリ
+  },
+  "include": [
+    "src",
+    "vite-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
